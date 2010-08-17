@@ -3,7 +3,7 @@ Contributors: jlevandowski
 Tags: nginx, proxy, cache, purge
 Requires at least: 3.0.1
 Tested up to: 3.0.1
-Stable tag: 0.9.1
+Stable tag: 0.9.2
 
 This plugin will purge the nginx proxy cache when you publish or update a post or page.
 
@@ -32,6 +32,9 @@ Upload the Nginx Proxy Cache Purge plugin to your site, Activate it, and Enjoy!
 After your publish or update a page or post this plugin creates a list or url's to purge.  For instance if the page is http://www.example.com/about/, the plugin creates a url of http://www.example.com/purge/about/.  After creating all the urls to purge, the plugin uses curl to open each of the urls.  It is critical that you have nginx configured with a location of /purge/.  You can manually purge a page by opening the purge url directly.
 
 == Changelog ==
+
+= 0.9.2 =
+* No need to clear the posts page if it's not enabled.
 
 = 0.9.1 =
 * Removed curl dependancy.
