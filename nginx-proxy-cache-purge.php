@@ -2,8 +2,8 @@
 /*
 Plugin Name: Nginx Proxy Cache Purge
 Plugin URI: http://wpselect.com/
-Description: This plugin will purge the nginx proxy cache when you publish or update a post or page.
-Version: 0.9.2
+Description: Purges the nginx proxy cache when you publish or update a post or page.
+Version: 0.9.3
 Author: John Levandowski
 Author URI: http://johnlevandowski.com/
 */
@@ -53,4 +53,17 @@ foreach ($urls_unique as $uri) {
 }
 
 add_action('edit_post', 'wpselect_cache');
+
+function wpselect_footer() {
+	$content = '<!-- Page created in ';
+	$content .= timer_stop($display = 0, $precision = 2);
+	$content .= ' seconds from ';
+	$content .= get_num_queries();
+	$content .= ' queries on ';
+	$content .= date('m.d.y \@ H:i:s T');
+	$content .= ' -->';
+	echo $content;
+}
+
+add_action('wp_footer', 'wpselect_footer');
 ?>
