@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Nginx Proxy Cache Purge
-Plugin URI: http://johnlevandowski.com/
+Plugin URI: http://wpselect.com/
 Description: Purges the nginx proxy cache when you publish or update a post or page.
-Version: 0.9.4
+Version: 0.9.5
 Author: John Levandowski
-Author URI: http://johnlevandowski.com/
+Author URI: http://wpselect.com/
 */
 
 function wpselect_cache($post_id) {
