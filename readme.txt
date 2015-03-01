@@ -25,7 +25,7 @@ Upload the Nginx Proxy Cache Purge plugin to your site, Activate it, and Enjoy!
 
 = What are the server requirements? =
 
-[Nginx reverse proxy cache](http://wiki.nginx.org/) running with the [ngx_cache_purge](http://labs.frickle.com/nginx_ngx_cache_purge/) module installed.  I have published instructions at: [WordPress Nginx proxy cache](http://wpselect.com/wordpress-nginx-proxy-cache/)
+[Nginx reverse proxy cache](http://wiki.nginx.org/) running with the [ngx_cache_purge](http://labs.frickle.com/nginx_ngx_cache_purge/) module installed.  I have published instructions at: [WordPress Nginx proxy cache](http://johnlevandowski.com/wordpress-nginx-proxy-cache/)
 
 = How does this plugin work? =
 
